@@ -1,5 +1,5 @@
 <?php
-$mysqli = mysqli_connect("127.0.0.1", "root", "szu12345", "test");
+include "connect.php";
 
 function get_table_data($tn)
 {
