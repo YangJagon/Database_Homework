@@ -31,9 +31,8 @@
 
             <nav>
                 <ul>
-                    <li style="border-top: 2px solid #ffffff;"> <a href="/database/index.php">Home</a> </li>
-                    <li> <a href="/database/index.php">Page 1</a> </li>
-                    <li> <a href="/database/index.php">Page 2</a> </li>
+                    <li> <a href="/database/home.php">HOME</a> </li>
+                    <li style="margin-top: 20px"> <a href="/database/index.php">CONTROL</a> </li>
                 </ul>
             </nav>
 

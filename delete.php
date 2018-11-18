@@ -16,6 +16,5 @@ foreach ($_GET as $i => $value) {
 }
 
 $res = mysqli_query($mysqli, "DELETE FROM ".$tablename." WHERE ".$idn."="."$idd");
-echo "DELETE FROM ".$tablename." WHERE ".$idn."="."$idd";
 header("Location: http://127.0.0.1/database/index.php?".$tablename); 
 ?>

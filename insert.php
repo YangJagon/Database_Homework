@@ -26,5 +26,3 @@ for($i=0; $i < count($fields); $i++)
 $res = mysqli_query($mysqli, "INSERT INTO ".$tablename." VALUES(".$str.")");
 header("Location: http://127.0.0.1/database/index.php?".$tablename);  
 ?>
- 
-  

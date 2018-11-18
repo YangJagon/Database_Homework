@@ -105,10 +105,17 @@ function show_table($tn)
         echo "<td>
         <input type=\"button\"
         class=\"button2\" 
-        value=\"Del\"
+        value=\"del\"
         name =\"delete\"
         onclick=\"javascript:window.location.
         href='http://127.0.0.1/database/delete.php?tablename=".$tablename."&".$fields[0]."=".$str."'\">
+         &#124 
+        <input type=\"button\"
+        class=\"button2\" 
+        value=\"up\"
+        name =\"update\"
+        onclick=\"javascript:window.location.
+        href='http://127.0.0.1/database/update.php?tablename=".$tablename."&".$fields[0]."=".$str."'\">
         </td>";
         echo "</tr>";
     }
@@ -133,7 +140,7 @@ function showForm($tn)
     echo "<tr>";
     for($i=0; $i<$cnum; $i++)
     {
-        echo "<td><input type=\"text\" class=\"input\" name=\"".$fields[$i]."\" id=\"".$fields[$i]."\"></td>";
+        echo "<td><input type=\"text\" class=\"input\" name=\"".$fields[$i]."\" id=\"".$fields[$i]."\"</td>";
     }
     echo "</tr>";
     echo "</table>"; 
