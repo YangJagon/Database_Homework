@@ -50,7 +50,7 @@ function show_table_up($tn)
         }
 
         $str=$row[$fields[0]];
-        if(stripos("1".$types[0], "date") || stripos("1".$types[0], "char"))
+        if(stripos("%".$types[0], "date") || stripos("%".$types[0], "char"))
             $str = "\\'".$str."\\'";
 
         echo "<td>
@@ -70,7 +70,7 @@ function show_table_up($tn)
         </td>";
         echo "</tr>";
 
-        if(stripos("1".$idd, $row[$idn]))
+        if(stripos("%".$idd, $row[$idn]))
         {
             echo "<form method=\"post\" action=\"rupdate.php\">";
 

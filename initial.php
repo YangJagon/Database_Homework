@@ -99,7 +99,7 @@ function show_table($tn)
         }
 
         $str=$row[$fields[0]];
-        if(stripos("1".$types[0], "date") || stripos("1".$types[0], "char"))
+        if(stripos("%".$types[0], "date") || stripos("%".$types[0], "char"))
             $str = "\\'".$str."\\'";
 
         echo "<td>

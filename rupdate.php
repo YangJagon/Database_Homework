@@ -19,7 +19,7 @@ for($i=0; $i < count($fields); $i++)
 
     if($argv == null)
         $argv = "null";
-    else if(stripos("1".$types[$i], "date") || stripos("1".$types[$i], "char"))
+    else if(stripos("%".$types[$i], "date") || stripos("%".$types[$i], "char"))
             $argv = "'".$argv."'";
 
     $str = $str.$fields[$i]."=".$argv;
