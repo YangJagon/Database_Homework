@@ -1,0 +1,58 @@
+#goods{
+    margin-left: 36px;
+}
+
+.product {
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #c9c9c9;
+    padding: 3px;
+    margin-left: 28px;
+    margin-top: 14px;
+    overflow: hidden;
+}
+
+.product:hover{
+    border: 2px solid rgb(120, 186, 162); 
+}
+
+.product:active {
+    box-shadow: 1px 2px 1px #666;
+    transform: translateY(2.4px);
+}
+
+.productPrice {
+    font-family: 宋体;
+    color: #ff0036;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 30px;
+    line-height: 30px;
+    overflow: inherit;
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.originalPrice{
+    font-family: 宋体;
+    float: right;
+    font-size: 14px;
+    max-width: 144px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 18px;
+}
+
+.productName{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: consolas;
+    font-size: 24px;
+    text-transform:capitalize;
+}
+

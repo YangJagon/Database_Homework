@@ -1,7 +1,9 @@
 <?php
 $tablename=$_POST["tablename"];
 
-include "initial.php";
+include "connect.php";
+include "functions.php";
+
 global $mysqli;
 $fields = get_table_fields($tablename);
 $types = get_table_types($tablename);
@@ -14,7 +16,7 @@ for($i=0; $i < count($fields); $i++)
         $str=$str.", ";
     $argv=$_POST[$fields[$i]];
 
-    if($argv == null)
+    if($argv == null || $argv=="")
         $str = $str."null";
     else{
         if(stripos("%".$types[$i], "date") || stripos("%".$types[$i], "char"))
@@ -24,5 +26,6 @@ for($i=0; $i < count($fields); $i++)
 }
 
 $res = mysqli_query($mysqli, "INSERT INTO ".$tablename." VALUES(".$str.")");
-header("Location: http://127.0.0.1/database/index.php?".$tablename);  
+//header("Location: http://127.0.0.1/database/index.php?".$tablename);  
+echo json_encode($res);
 ?>

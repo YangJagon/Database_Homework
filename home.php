@@ -3,7 +3,7 @@
     <head>
         <title>Database Management</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="database.css" type="text/css">
+        <link rel="stylesheet" href="css/database.css" type="text/css">
     </head>
     <body>
         <div id="wrapper">
@@ -11,10 +11,12 @@
                 <h1>Database Management System</h1>
             </header>
 
+            <div id="container">
             <nav>
                 <ul>
                     <li> <a href="/database/home.php">HOME</a> </li>
-                    <li style="margin-top: 20px"> <a href="/database/index.php">CONTROL</a> </li>
+                    <li style="margin-top: 20px"> <a href="/database/market.html">MARKET</a> </li>
+                    <li style="margin-top: 20px"> <a href="/database/index.html">CONTROL</a> </li>
                 </ul>
             </nav>
 
@@ -36,6 +38,7 @@
                 </div>
                 <hr>
             </main>
+            </div>
 
             <footer>
                 Copyright &copy; 2018 Jagon

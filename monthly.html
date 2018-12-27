@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Database Management</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/database.css" type="text/css">
+
+        <script src="js/monthly.js"></script>
+        <script>
+        var product = window.location.search.substr(1); 
+        if(product == "" || product == null) product="milk";
+        document.write("<style>#"+product+" {color: rgb(213, 84, 87); font-size: 1.24em;}</style>");
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Database Management System</h1>
+            </header>
+
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li> <a href="/database/market.html">MARKET</a> </li>
+                        <li style="margin-top: 20px"> <a href="/database/monthly.html">MONTHLY</a> </li>
+                        <li style="margin-top: 20px"> <a href="/database/index.html">CONTROL</a> </li>
+                    </ul>
+                </nav>
+            
+                <main>
+                    <div>
+                    <h2 class="second_title">MONTHLY  SALE</h2>
+
+                    <hr>
+                    <div>
+                        <ul>
+                            <li><a href="/database/monthly.html?milk" class="month_a" id="milk" style="margin-left:40px">Milk</a></li>
+                            <li><a href="/database/monthly.html?egg" class="month_a" id="egg">Egg</a></li>
+                            <li><a href="/database/monthly.html?bread" class="month_a" id="bread">Bread</a></li>
+                            <li><a href="/database/monthly.html?pineapple" class="month_a" id="pineapple">Pineapple</a></li>
+                            <li><a href="/database/monthly.html?knife" class="month_a" id="knife">Knife</a></li>
+                            <li><a href="/database/monthly.html?shovel" class="month_a" id="shovel">Shovel</a></li>
+                        </ul>
+                    </div>
+            
+                    <hr>
+                        <div id="Table" style=" height: 540px;  overflow: scroll;"></div>
+                    </div>
+            
+                </main>
+
+            </div>
+
+            <footer>
+                Copyright &copy; 2018 Jagon
+            </footer>
+        </div>
+        <script>getTable(product);</script>
+    </body>
+
+</html>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Database Management</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/database.css" type="text/css">
+
+        <script src="js/main.js"></script>
+        <script>
+        var tableName = window.location.search.substr(1); 
+        if(tableName == "" || tableName == null) tableName="employees";
+        document.write("<style>#"+tableName+" {color: rgb(120, 186, 162); font-size: 1.24em;}</style>");
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Database Management System</h1>
+            </header>
+
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li> <a href="/database/market.html">MARKET</a> </li>
+                        <li style="margin-top: 20px"> <a href="/database/monthly.html">MONTHLY</a> </li>
+                        <li style="margin-top: 20px"> <a href="/database/index.html">CONTROL</a> </li>
+                    </ul>
+                </nav>
+            
+                <main>
+                    <div>
+                    <h2>TABLE</h2>
+                    <div>
+                        <ul>
+                            <li><a href="/database/index.html?employees" id="employees">Employees</a></li>
+                            <li><a href="/database/index.html?customers" id="customers">Customers</a></li>
+                            <li><a href="/database/index.html?suppliers" id="suppliers">Suppliers</a></li>
+                            <li><a href="/database/index.html?products" id="products">Products</a></li>
+                            <li><a href="/database/index.html?purchases" id="purchases">Purchases</a></li>
+                            <li><a href="/database/index.html?logs" id="logs">Logs</a></li>
+                        </ul>
+                    </div>
+            
+                    <hr>
+                        <div id="Table" style="min-height: 400px; height: 400px; max-height: 400px; overflow: scroll;"></div>
+                    </div>
+                                
+                <hr>
+                        
+                <h2>INSERT</h2>
+                    <form method="post" action="insert.php">
+                    <div id="Form"></div>
+                    <div style="width: 170px; margin:auto;">
+                        <input type="reset" name="reset" id="reset" value="Reset" class="button">
+                        <input type="submit" name="submit" id="submit" value="Submit" class="button">
+                    </div>
+                </form>
+            
+                </main>
+
+            </div>
+
+            <footer>
+                Copyright &copy; 2018 Jagon
+            </footer>
+        </div>
+        <script>initial();</script>
+    </body>
+
+</html>
+
+</html>
